@@ -8,8 +8,7 @@ Paste the answer to each question in the answer code section below each question
 
 Given the following numpy array:
 
-Python:
-```
+```python
 arr = np.array([1, 2, 3, 4, 5])
 ```
 
@@ -17,8 +16,7 @@ Write a Python code to multiply each element in the array by 2.
 
 Answer:
 
-Python:
-```
+```python
 arr * 2
 ```
 
@@ -26,8 +24,7 @@ arr * 2
 
 Given the following 2D numpy array:
 
-Python:
-```
+```python
 arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 ```
 
@@ -35,16 +32,14 @@ Write a Python code to select the second row of the array.
 
 Answer:
 
-Python:
-```
+```python
 arr[1]
 ```
 ### Question 3
 
 Given the following 2D numpy array:
 
-Python:
-```
+```python
 arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 ```
 
@@ -52,8 +47,7 @@ Write a Python code to calculate the average of all the elements.
 
 Answer:
 
-Python:
-```
+```python
 arr.average()
 ```
 ### Question 4
@@ -62,8 +56,7 @@ Question: Select all numeric columns except float from the DataFrame `dft`.
 
 Answer:
 
-Python:
-```
+```python
 dft.select_dtypes(include=['number'], exclude=['float'])
 ```
 
@@ -73,8 +66,7 @@ Question: How do you return the last 3 rows of a DataFrame `df`?
 
 Answer:
 
-Python:
-```
+```python
 df.tail(3)
 ```
 
@@ -84,8 +76,7 @@ Question: Return the minimum and maximum of a Series `x` as a new Series with th
 
 Answer:
 
-Python:
-```
+```python
 pd.Series([x.min(), x.max()], index=["min", "max"])
 ```
 
@@ -93,8 +84,7 @@ pd.Series([x.min(), x.max()], index=["min", "max"])
 
 Question: How do you select rows from a DataFrame where any value in the row exceeds a threshold?
 
-Python:
-```
+```python
 import pandas as pd
 
 df = pd.DataFrame({'A': [1, 2, 3, 4, 5], 'B': [10, 20, 30, 40, 50]})
@@ -103,17 +93,18 @@ threshold = 30
 
 Answer:
 
-Python:
-```
+```python
+import pandas as pd
 
+df = pd.DataFrame({'A': [1, 2, 3, 4, 5], 'B': [10, 20, 30, 40, 50]})
+threshold = 30
 ```
 
 ### Question 8
 
 Question: How do you compute the cumulative sum of a column in a DataFrame?
 
-Python:
-```
+```python
 import pandas as pd
 
 df = pd.DataFrame({'A': [1, 2, 3, 4, 5]})
@@ -121,17 +112,15 @@ df = pd.DataFrame({'A': [1, 2, 3, 4, 5]})
 
 Answer:
 
-Python:
-```
-
+```python
+df['Cumulative Sum of A'] = df['A'].cumsum()
 ```
 
 ### Question 9
 
 Question: How do you convert a Series of strings to uppercase?
 
-Python:
-```
+```python
 import pandas as pd
 
 series = pd.Series(['apple', 'banana', 'cherry'])
@@ -139,17 +128,15 @@ series = pd.Series(['apple', 'banana', 'cherry'])
 
 Answer:
 
-Python:
-```
-
+```python
+series_uppercase = series.str.upper()
 ```
 
 ### Question 10
 
 Question: Calculate the correlation between 'MSFT' and 'IBM' returns from a DataFrame of stock returns.
 
-Python:
-```
+```python
 import pandas as pd
 
 # Assuming 'returns' is a DataFrame containing stock returns
@@ -161,8 +148,7 @@ returns = pd.DataFrame({
 
 Answer:
 
-Python:
-```
+```python
 
 ```
 
@@ -170,8 +156,7 @@ Python:
 
 Question: Slice the Series to return data from 5th to 15th January.
 
-Python:
-```
+```python
 import pandas as pd
 import numpy as np
 
@@ -181,8 +166,7 @@ data = pd.Series(np.random.rand(len(dates)), index=dates)
 
 Answer:
 
-Python:
-```
+```python
 
 ```
 
@@ -190,15 +174,13 @@ Python:
 
 Question: How to plot a histogram with 30 bins for `data` in matplotlib? Label the x and y axis as `X` and `Y` respectively.
 
-Python:
-```
+```python
 data = np.random.randn(1000)
 ```
 
 Answer:
 
-Python:
-```
+```python
 
 ```
 
@@ -206,16 +188,14 @@ Python:
 
 Question: How do you create a bar plot in seaborn using the `tips` dataset to show the average tip amount per day?
 
-Python:
-```
+```python
 import seaborn as sns
 tips = sns.load_dataset('tips')
 ```
 
 Answer:
 
-Python:
-```
+```python
 
 ```
 
@@ -225,8 +205,7 @@ Question: How to create a box plot for total_bill categorized by day in the `tip
 
 Answer:
 
-Python:
-```
+```python
 
 ```
 
